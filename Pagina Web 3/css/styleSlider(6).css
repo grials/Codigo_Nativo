@@ -1,0 +1,101 @@
+.slider{
+    width: inherit;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slides{
+    width: 600%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: calc(90vw - 64px);
+    height: 100%;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #cccccc96;
+}
+.slide p{
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+}
+.slide-detallesCliente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detallesCliente-nombre{
+    color: var(--color-azul-100);
+    text-align: center;
+}
+
+.slide img{
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 100px;
+    min-height: 100px;
+    width: calc(90vw - 64px - 124px);
+    height: calc(90vw - 64px - 124px);
+    border-radius: 50%;
+}
+/* CSS for manual slide navigation */
+.navigation-manual{
+    width: auto;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.selected{
+    background: #23e3c9;
+}
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:hover{
+    background-color: #40d3dc;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .firts{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .firts{
+    margin-left: -16.6666667%;
+}
+
+#radio3:checked ~ .firts{
+    margin-left: -33.3333333%;
+}
+
+#radio4:checked ~ .firts{
+    margin-left: -50.0000003%;
+}
+
+#radio5:checked ~ .firts{
+    margin-left: -66.6666667%;
+}
+
+#radio6:checked ~ .firts{
+    margin-left: -83.3333334%;
+}

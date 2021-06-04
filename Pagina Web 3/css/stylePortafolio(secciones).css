@@ -1,0 +1,613 @@
+
+/* :root{
+    --color-turquesa-100:#00FFFF;
+    --color-azul-100:#00f;
+    --color-azul-0: #03035E;
+    --color-blanco-100: #ffffff;
+    --tamano-letra-h1: 32px;
+    --tamano-letra-h2: 24px;
+} */
+
+section{
+    max-width: 1200px;
+    width: calc(90vw - 32px);
+    margin: 64px auto;
+    height: auto;
+}
+/*=============================================
+=                Section ACERCA               =
+=============================================*/
+#acerca{
+    width: 100vw;
+    height: 1vh;
+}
+.descripcionAcerca{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 300px));
+    grid-template-rows: repeat(auto-fill, minmax(min-content, max-content));
+    gap: 16px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.descripcionAcerca-leyendaProgramador{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.leyendaProgramador-nombreCargo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.leyendaProgramador-parrafo1{
+    text-align: justify;
+    text-indent: 16px;
+    margin-bottom: 8px;
+}
+
+.leyendaProgramador-parrafo2{
+    text-align: justify;
+    text-indent: 16px;
+    margin-bottom: 16px;
+}
+
+.leyendaProgramador-containerBtnDecargarCV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leyendaProgramador-btnDecargarCV{
+    max-width: 256px;
+    width: calc(100% - 64px);
+    height: 64px;
+    color: var(--color-blanco-100);
+    border-radius: 32px;
+    background-color: var(--color-azul-100);
+}
+.habilidades-fotoPerfil img{
+    max-width: 400px;
+    max-height: 400px;
+    width: calc(90vw - 64px);
+    border-radius: 5px;
+}
+
+.habilidades-fotoPerfil img:hover{
+    border: 5px solid var(--color-turquesa-100);
+}
+
+.desccripcionAcerca-habilidades{
+    justify-self: center;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades-titulo{
+    font-size: var(--tamano-letra-h2);
+}
+
+.habilidades-skills img{
+    width: 100%;
+}
+/*=====  End of Section ACERCA  ======*/
+
+
+
+
+/*=============================================
+=      Section Servicios comment block        =
+=============================================*/
+#servicios{
+    width: 100vw;
+    height: 1vh;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulo"
+                        "contenido";
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.servicios-titulo{
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+    text-align: center;
+    grid-area: titulo;
+}
+
+.section-container{
+    grid-area: contenido;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.container-item-desWeb{
+    margin-bottom: 32px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 392px;
+    width: 100%;
+}
+
+.container-item-disWeb{
+    margin-bottom: 32px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 392px;
+    width: 100%;
+}
+
+.container-item-webHost{
+    margin-bottom: 32px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 392px;
+    width: 100%;
+}
+
+.container-item-seo{
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 392px;
+    width: 100%;
+}
+
+.section-container div p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.section-container div figure{
+    margin-bottom: 8px;
+}
+
+.section-container div h3{
+    margin-bottom: 16px;
+}
+/*=====  End of Section Servicios comment block  ======*/
+
+
+
+/*=============================================
+=      Section Portafolio comment block       =
+=============================================*/
+#portafolio{
+    width: 100vw;
+    height: 1vh;
+}
+
+.portafolio{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulo"
+                        "contenido";
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.portafolio-titulo{
+    grid-area: titulo;
+    justify-self: center;
+    align-self: center;
+    padding: 5px;
+    text-align: center;
+}
+.portafolio-containerGallery{
+    grid-area: contenido;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.containerGallery-item{
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
+    position: relative;
+    z-index: 10;
+    width: 80vw;
+    height: 80vw;
+}
+.containerGallery-item img{
+    width: 100%;
+    height: 100%;
+}
+.containerGallery-item-active{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 255, 0.705);
+    transform: scale(0);
+    transition: .3s;
+}
+.containerGallery-item-activeScale{
+    transform: scale(1);
+}
+.item-active-contenido{
+    border: 2px solid var(--color-blanco-100);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.active-contenido-titulo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 8px auto;
+}
+.item-active-contenido h3{
+    font-size: 24px;
+    color: var(--color-blanco-100)
+}
+.item-active-parrafo1{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px auto;
+}
+.item-active-contenido p{
+    padding: 8px;
+    color: rgb(29, 28, 28);
+    text-align: center;
+
+}
+.containerGallery-item img{
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.portafolio-item-activeClick{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: opacity .8s;
+    opacity: 1;
+    transform: translate(0);
+}
+.item-activeClick-container{
+    margin: auto;
+    background-color: rgba(49, 48, 48, 0.747);
+    min-width: 250px;
+    max-width: 750px;
+    min-height: 250px;
+    max-height: 750px;
+    width: calc(90vw - 32px);
+    height: calc(80vw -32px);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.activeClick-container-image{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activeClick-container-image img{
+    min-width: 250px;
+    max-width: 350px;
+    min-height: 250px;
+    max-height: 250px;
+    width: 50%;
+    height: 50%;
+    border-radius: 16px;
+}
+.activeClick-contenido{
+    min-width: 250px;
+    max-width: 350px;
+    min-height: 250px;
+    max-height: 250px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.activeClick-contenido h3{
+    width: 100%;
+    padding: 8px;
+    align-self: flex-start;
+    color: var(--color-blanco-100);
+    border-bottom: 1px solid var(--color-azul-100);
+}
+.activeClick-contenido p{
+    width: 100%;
+    padding: 4px;
+    align-self: flex-start;
+    text-align: justify;
+    color: #6b6767;
+}
+.active-contenido-descripcion{
+    margin-top: 8px;
+    width: 100%;
+    padding: 8px;
+}
+.active-contenido-descripcion div{
+    display: flex;
+    justify-content: space-between;
+}
+.active-contenido-descripcion div h4{
+    color: var(--color-blanco-100);
+    font-size:large;
+    font-weight: 900;
+}
+.active-contenido-descripcion div h5{
+    color: var(--color-blanco-100);
+}
+.btnCerrar-portafolio-item-activeClick{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.disabledd{
+    opacity: 0;
+    transform: translate(110vw);
+}
+/*=====  End of Section Portafolio comment block  ======*/
+
+
+
+
+/*=============================================
+=      Section Testimonios comment block      =
+=============================================*/
+#testimonios{
+    width: 100vw;
+    height: 1vh;
+}
+.testimonios{
+    margin-top: 64px;
+    width: calc(90vw - 64px);
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulo"
+                        "contenido";
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../img/Pexels\ Photo\ by\ Cytonn\ Photography.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+}
+
+.testimonios-titulo{
+    border-top: 2px solid var(--color-azul-100);
+    border-bottom: 2px solid var(--color-azul-100);
+    margin-top: 5px;
+    color: var(--color-blanco-100);
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+/*=====  End of Section Testimonios comment block  ======*/
+
+
+
+/*=============================================
+=        Section Contacto comment block       =
+=============================================*/
+#contacto{
+    width: 100vw;
+    height: 1vh;
+}
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% repeat(2, minmax(min-content, max-content));
+    grid-template-areas: "titulo"
+                        "contenido"
+                        "formulario";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.contacto-titulo{
+    grid-area: titulo;
+    border-bottom: 2px solid var(--color-azul-100);
+    border-top: 2px solid var(--color-azul-100);
+}
+
+.contacto-containerContacto{
+    grid-area: contenido;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contacto-containerContacto img{
+    width: 250px;
+    height: 150px;
+    transition: .3s;
+}
+.contacto-containerContacto img:hover{
+    border: 1px solid var(--color-turquesa-100);
+    box-shadow: 15px 15px 15px #00000094;
+    transform: scale(1.2);
+}
+
+.contacto-formulario{
+    grid-area: formulario;
+    box-shadow: 5px 5px 5px #00000094;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    max-width: 650px;
+    max-height: 750px;
+    width: 100%;
+    height: 100%;
+}
+.contacto-formulario-nombre{
+    width: 95%;
+    height: 10%;
+    margin-bottom: 8px;
+}
+.contacto-formulario-nombre input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid var(--color-azul-100);
+}
+.contacto-formulario-nombre input::placeholder{
+    color: rgb(4, 8, 241);
+    font-weight: 900;
+}
+
+.contacto-formulario-email{
+    width: 95%;
+    height: 10%;
+    margin-bottom: 8px;
+}
+.contacto-formulario-email input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid var(--color-azul-100);
+}
+.contacto-formulario-email input::placeholder{
+    color: rgb(4, 8, 241);
+    font-weight: 900;
+}
+
+.contacto-formulario-comentarios{
+    width: 95%;
+    height: 60%;
+    margin-bottom: 8px;
+}
+.contacto-formulario-comentarios textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+.contacto-formulario-comentarios textarea::placeholder{
+    color: rgb(4, 8, 241);
+    font-weight: 900;
+}
+
+.contacto-formulario-enviar{
+    width: auto;
+    height: 50px;
+}
+.contacto-formulario-enviar input{
+    width: auto;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--color-azul-100);
+    color: var(--color-blanco-100);
+    text-shadow: 1px 1px 6px var(--color-blanco-100);
+}
+/*=====  End of Section Contacto comment block  ======*/
+
+
+
+.footer{
+    width: 100vw;
+    margin-bottom: 64px;
+    background-color: var(--color-azul-100);
+    padding: 15px;
+}
+
+.footer-firma{
+    text-align: center;
+    color: var(--color-blanco-100);
+}
+
+/*=============================================
+=        MEDIA QUERIES comment block          =
+=============================================*/
+@media screen and (min-width:720px){
+    .desccripcionAcerca-habilidades{
+        grid-column: 1/3;
+    }
+    .contacto-formulario{
+        height: 550px;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .desccripcionAcerca-habilidades{
+        grid-column: 3/4;
+    }
+}
+@media screen and (min-width: 950px){
+    .footer{
+        margin-bottom: 0;
+    }
+}
+/*=====  End of MEDIA QUERIES comment block  ======*/
+
